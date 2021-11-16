@@ -1,14 +1,5 @@
 import random
 
-print("git proba")
-print("Ez már a második commit")
-print ("Jó lesz ez")
-
-szam1=int(input("Kérek 1 számot a felhasználótól"))
-szam2=int(input("Kérek 2 számot a felhasználótól"))
-osszeg=szam1+szam2
-print(osszeg)
-
 
 list=[]
 for i in range(10):
@@ -17,3 +8,20 @@ for i in range(10):
 #Kiirom a listat
 for i in list:
     print(i) 
+osszeg=sum(list)
+atlag=osszeg/len(list)
+print("A számok átlaga",atlag)
+minimum=min(list)
+print(minimum)
+maximum=max(list)
+print (maximum)
+#Eldöntés tétele
+vane=False
+for i in list:
+    if i ==9 :
+        vane=True
+
+if vane==True :
+    print("Volt benne 9-es!!!")
+else:
+    print( "Nincs benne 9-es!")
